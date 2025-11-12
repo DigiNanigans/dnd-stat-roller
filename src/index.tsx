@@ -2,6 +2,7 @@ import { hydrate, prerender as ssr } from 'preact-iso';
 import classes from './app.module.css';
 import { DiceProvider, useDice } from './use-dice';
 import StatBlocks from './components/statBlock';
+import RollConfig from './components/rollConfig';
 
 export function Wrapper() {
     return (
@@ -22,6 +23,8 @@ export function App() {
             }}>
                 Roll Character
             </button>
+
+            <RollConfig />
 
             <hr class={classes.seperator} />
 
